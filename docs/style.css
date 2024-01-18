@@ -39,77 +39,64 @@ body {
   color: #b82330;
   font-weight: bold;
 }
-.header-2 .menu-burger ul li {
+.header-2 .menu-burger ul .li-menu {
   position: relative;
-  /* width: 100%; */
   height: 100%;
   padding: 0 10px;
   transition: 1s;
 }
 
-.header-2 .menu-burger ul li a {
+.header-2 .menu-burger ul .li-menu:hover {
+  transform: translateY(-12px);
+}
+
+.header-2 .menu-burger ul .li-menu a {
   text-decoration: none;
   color: #b82330;
 }
 
-.header-2 .menu-burger ul li:hover {
-  background-color: #ada3af;
-  padding: 10px;
-  transform: translateY(-12px);
-}
-
-.header-2 .menu-burger ul li .container-ul {
+.header-2 .menu-burger ul .li-menu .container-ul {
   position: absolute;
   top: 80px;
   left: 0;
-  z-index: 1;
-  width: max-content;
+  z-index: 999;
   font-size: 20px;
   display: none;
 }
 
-.header-2 .menu-burger ul li:hover .container-ul {
+.header-2 .menu-burger ul .li-menu:hover .container-ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: white;
-  padding: 35px 10px;
+  padding: 25px 10px;
   height: auto;
-  text-align: center;
+  width: max-content;
+  text-align: baseline;
 }
 
-.header-2 .menu-burger ul li .container-ul ul {
+.header-2 .menu-burger ul .li-menu .container-ul ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: baseline;
-  margin: 5px 10px;
+  margin: 5px;
   width: max-content;
   height: 100%;
 }
 
-.header-2 .menu-burger ul li .container-ul ul li {
-  padding: 10px;
+.header-2 .menu-burger ul .li-menu .container-ul ul li {
+  padding: 10px 0;
   color: grey;
   font-weight: lighter;
+  width: 100%;
 }
-.header-2 .menu-burger ul li .container-ul ul li h3 {
+.header-2 .menu-burger ul .li-menu .container-ul ul li h3 {
   font-size: 16px;
   color: #b82330;
 }
 
-/* .header-2 .menu-burger ul li ul li {
-  padding: 5px;
-  width: 100%;
-} */
-
-/* ---------recuperer-parti sous menu */
-/* .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-} */
 /* -------------- */
 
 .header-2 .menu {
@@ -117,7 +104,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 0 0px;
+  padding: 0;
 }
 
 .header-2 .logo img {
@@ -496,6 +483,17 @@ body {
   .header-2 .logo img {
     width: 120px;
     height: 40px;
+  }
+
+  .header-2 .menu-burger ul .li-menu:hover .container-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding: 35px 10px;
+    height: auto;
+    text-align: center;
+    z-index: 1;
   }
   /* sec4-------- */
 
