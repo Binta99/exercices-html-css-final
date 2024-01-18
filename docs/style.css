@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 /* ---------header---------- */
 .header-wrapper .header-1 {
   background: #ffbe9f;
@@ -31,11 +32,6 @@ body {
   border: 1px solid white;
   color: #b82330;
 }
-/* .header-2 .menu {
-  position: sticky;
-  top: 10px;
-  z-index: 999;
-} */
 
 .header-2 .menu-burger ul {
   display: flex;
@@ -45,29 +41,76 @@ body {
 }
 .header-2 .menu-burger ul li {
   position: relative;
+  /* width: 100%; */
+  height: 100%;
   padding: 0 10px;
+  transition: 1s;
 }
 
-.header-2 .menu-burger ul li ul {
-  background-color: white;
-  padding-left: 5px;
+.header-2 .menu-burger ul li a {
+  text-decoration: none;
+  color: #b82330;
+}
+
+.header-2 .menu-burger ul li:hover {
+  background-color: #ada3af;
+  padding: 10px;
+  transform: translateY(-12px);
+}
+
+.header-2 .menu-burger ul li .container-ul {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  text-align: center;
+  top: 80px;
+  left: 0;
+  z-index: 1;
+  width: max-content;
+  font-size: 20px;
   display: none;
 }
 
-.header-2 .menu-burger ul li ul li {
-  padding: 5px;
+.header-2 .menu-burger ul li:hover .container-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  padding: 35px 10px;
+  height: auto;
+  text-align: center;
 }
 
-.header-2 .menu-burger ul li:hover ul {
+.header-2 .menu-burger ul li .container-ul ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: baseline;
+  margin: 5px 10px;
+  width: max-content;
+  height: 100%;
 }
+
+.header-2 .menu-burger ul li .container-ul ul li {
+  padding: 10px;
+  color: grey;
+  font-weight: lighter;
+}
+.header-2 .menu-burger ul li .container-ul ul li h3 {
+  font-size: 16px;
+  color: #b82330;
+}
+
+/* .header-2 .menu-burger ul li ul li {
+  padding: 5px;
+  width: 100%;
+} */
+
+/* ---------recuperer-parti sous menu */
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+} */
+/* -------------- */
 
 .header-2 .menu {
   display: flex;
@@ -98,11 +141,22 @@ body {
 /* ----------sec2---------------- */
 .sec2-wrapper {
   background-color: white;
+  overflow: hidden;
 }
 .sec2-wrapper .image-large img {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  animation: bodyanimate 2s ease;
+}
+@keyframes bodyanimate {
+  0% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .sec2-wrapper .fleche {
   display: flex;
@@ -257,7 +311,7 @@ body {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  transition: 0.4s ease;
+  /* transition: 0.4s ease; */
   transition: 2s;
 }
 
@@ -410,23 +464,21 @@ body {
   color: #b82330;
 }
 .sec7-wrapper .container-7 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin: 30px 100px;
 }
 
 .sec7-wrapper .container-7 .images {
+  margin: 10px auto;
   background-color: #f9f9fa;
-  margin: 20px;
-  padding-bottom: 10px;
-  width: 300px;
+  width: 90%;
   height: auto;
 }
 .sec7-wrapper .container-7 .images img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 .sec7-wrapper .container-7 .images p {
@@ -515,6 +567,14 @@ body {
   .sec4-wrapper .sec4-flex .im3 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+  }
+
+  /* -------------------sec7---------------- */
+  .sec7-wrapper .container-7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 30px auto;
   }
 }
 
