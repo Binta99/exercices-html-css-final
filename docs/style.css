@@ -603,7 +603,68 @@ body {
   font-weight: bold;
 }
 
+/* _____________________________________________________________________ */
+/* ___________________________________Recipes_________________________ */
+.recipes-1 {
+  background-color: white;
+  height: auto;
+  padding-bottom: 100px;
+  padding: 30px 50px;
+}
+.recipes-1 .container-1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.recipes-1 .container-1 h1 {
+  color: #b82330;
+  margin: 20px 0;
+  font-size: 30px;
+}
+.recipes-1 .container-1 p {
+  line-height: 30px;
+  margin-top: 50px;
+  color: gray;
+  font-size: 20px;
+}
+.recipes-1 .container-1 .photo-flex {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+.recipes-1 .container-1 .photo-flex .photo {
+  width: 100%;
+  margin-top: 20px;
+}
+.recipes-1 .container-1 .photo-flex .photo img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+.recipes-1 .container-1 .photo-flex .photo button {
+  width: 110px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #53555a;
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+}
+
 /* ______________________________MediasQueries______________________________ */
+@media screen and (max-width: 1300px) {
+  /* ___________________________________ */
+  /* ___________________________recipes */
+
+  .recipes-1 .container-1 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 980px) {
   /* header-2---------- */
@@ -642,6 +703,14 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
+  /* ___________________________________ */
+  /* ___________________________recipes */
+
+  .recipes-1 .container-1 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ___________________________ */
@@ -654,6 +723,18 @@ body {
     font-size: 16px;
   }
   /* sec3-------- */
+
+  /* ___________________________________ */
+  /* ___________________________recipes */
+  .recipes-1 {
+    padding: 30px 0px;
+  }
+
+  .recipes-1 .container-1 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* _________________________________ */
