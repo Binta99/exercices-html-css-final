@@ -441,7 +441,7 @@ body {
 .sec7-wrapper {
   background-image: url(banniere_bas_site_regulier2_1920x1080.jpeg);
   background-size: cover;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .sec7-wrapper h1 {
@@ -474,6 +474,133 @@ body {
 }
 .sec7-wrapper .container-7 .images p a {
   color: #53555a;
+}
+
+.sec7-wrapper .para p {
+  margin: auto;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.sec7-wrapper .buton {
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+  transition: 0.4s;
+}
+.sec7-wrapper .buton:hover {
+  transform: translateY(-20px);
+  /* background-color: #b82330; */
+}
+.sec7-wrapper .buton button {
+  height: 40px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: large;
+}
+
+/* -------------------sec8------------------- */
+
+.sec8-wrapper {
+  background-color: #f9f9fa;
+  width: 100%;
+  height: 100%;
+}
+
+.sec8-wrapper .All {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.sec8-wrapper .All .photo {
+  width: 100%;
+  height: auto;
+  /* margin: auto; */
+}
+.sec8-wrapper .All .photo img {
+  width: 95%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.sec8-wrapper .All .texte {
+  text-align: start;
+}
+.sec8-wrapper .All .texte h2 {
+  color: #b82330;
+  margin-bottom: 30px;
+}
+.sec8-wrapper .All .texte p {
+  font-size: 20px;
+  line-height: 25px;
+  color: gray;
+}
+
+.sec8-wrapper .container-8 .liste {
+  padding: 20px 0;
+  text-align: center;
+}
+.sec8-wrapper .container-8 .liste ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec8-wrapper .container-8 .liste ul li {
+  padding: 20px;
+  list-style: none;
+  font-size: 20px;
+}
+.sec8-wrapper .container-8 .liste ul li span {
+  font-size: 25px;
+  color: #b82330;
+  font-weight: bold;
+  border-bottom: 2px solid #b82330;
+}
+/* ----------------sec9--------------- */
+.sec9-wrapper {
+  background-image: url(banniere_bas_site_regulier_1500x.jpeg);
+  background-size: cover;
+  padding: 20px 0 100px 0;
+}
+.sec9-wrapper .container-9 {
+  text-align: center;
+}
+.sec9-wrapper .container-9 h1 {
+  font-size: 36px;
+  color: #f9f9fa;
+  margin: 20px 0 30px 0;
+}
+
+.sec9-wrapper .container-9 p {
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.sec9-wrapper .container-9 input {
+  height: 50px;
+  width: 30%;
+}
+
+.sec9-wrapper .container-9 button {
+  height: 50px;
+  width: 120px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* ______________________________MediasQueries______________________________ */
