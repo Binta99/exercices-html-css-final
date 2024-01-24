@@ -1,3 +1,9 @@
+body {
+    background-image: url(Oat_from_Quebec-web_1500x.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
 
 /* ---------header---------- */
 .header-wrapper .header-1 {
@@ -198,3 +204,46 @@ footer{
     flex-wrap: wrap;
     gap: 20px;
 }
+@media screen and (max-width: 980px) {
+    /* header-2---------- */
+    .header-2 .logo img {
+      width: 120px;
+      height: 40px;
+    }
+  
+    .header-2 .menu-burger ul .li-menu:hover .container-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: white;
+      padding: 35px 10px;
+      height: auto;
+      text-align: center;
+      z-index: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* .header-2-------- */
+  
+    .header-2 .nav-icone i {
+      padding: 0 10px;
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    /* header-2-------------------- */
+    .header-2 .menu-burger ul {
+      display: block;
+    }
+    .header-2 .menu-burger ul li {
+      padding: 0 10px;
+    }
+    .header-2 .nav-icone i {
+      display: none;
+      padding: 0 10px;
+      font-size: 20px;
+      color: #b82330;
+    }
+}  
