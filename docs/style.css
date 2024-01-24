@@ -112,8 +112,6 @@ body {
   width: 130px;
   height: 70px;
 }
-.header-2 .nav-icone {
-}
 
 .header-2 .nav-icone i {
   padding: 0 10px;
@@ -653,12 +651,113 @@ body {
   border-radius: 10px;
 }
 
+/* _____________________________________________________________________ */
+/* ___________________________________we are you_________________________ */
+.we-wrapper {
+  background-color: white;
+}
+
+.we-wrapper .container-1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.we-wrapper .container-1 h1 {
+  color: #b82330;
+  font-size: 36px;
+  font-weight: 100;
+  margin: 20px 0 20px 0;
+}
+
+.we-wrapper .container-1 .fond {
+  background-image: url(fond-we.jpeg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.we-wrapper .container-1 p {
+  color: #b82330;
+  font-size: 28px;
+}
+
+.we-wrapper .container-1 p span {
+  color: gray;
+  font-size: 19px;
+}
+
+.we-wrapper .container-1 .imge {
+  height: 100vh;
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+.we-wrapper .container-1 .imge img {
+  height: 600px;
+  width: 90%;
+  object-fit: cover;
+}
+
+/* ------------sec2----------- */
+.we-are-wrapper {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.we-are-wrapper .container-2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.we-are-wrapper .container-2 h1 {
+  color: #b82330;
+  font-size: 36px;
+  font-weight: 100;
+  margin: 20px 0 20px 0;
+}
+.we-are-wrapper .container-2 p {
+  color: gray;
+  font-size: 19px;
+}
+
+.we-are-wrapper .container-2 .photo-flex {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+.we-are-wrapper .container-2 .photo-flex .photo {
+  width: 100%;
+  margin-top: 20px;
+}
+.we-are-wrapper .container-2 .photo-flex .photo img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.we-are-wrapper .container-2 .photo-flex .photo h1 {
+  color: grey;
+}
+
 /* ______________________________MediasQueries______________________________ */
 @media screen and (max-width: 1300px) {
   /* ___________________________________ */
   /* ___________________________recipes */
 
   .recipes-1 .container-1 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  /* ___________________________________ */
+  /* ___________________________we are you */
+
+  .we-are-wrapper .container-2 .photo-flex {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -711,6 +810,14 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /* ___________________________________ */
+  /* ___________________________we are you */
+
+  .we-are-wrapper .container-2 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ___________________________ */
@@ -731,6 +838,17 @@ body {
   }
 
   .recipes-1 .container-1 .photo-flex {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* ___________________________________ */
+  /* ___________________________we are you */
+  .recipes-1 {
+    padding: 30px 0px;
+  }
+
+  .we-are-wrapper .container-2 .photo-flex {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr;
