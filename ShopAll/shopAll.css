@@ -1,3 +1,125 @@
+body {
+    background-image: url(Oat_from_Quebec-web_1500x.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* ---------header---------- */
+  .header-wrapper .header-1 {
+    background: #ffbe9f;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .header-wrapper .header-1 p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  
+  /* header-2--------------- */
+  .header-2 {
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    height: auto;
+    border: 1px solid white;
+    color: #b82330;
+  }
+  
+  .header-2 .menu-burger ul {
+    display: flex;
+    list-style: none;
+    color: #b82330;
+    font-weight: bold;
+  }
+  .header-2 .menu-burger ul .li-menu {
+    position: relative;
+    height: 100%;
+    padding: 0 10px;
+    transition: 1s;
+  }
+  
+  .header-2 .menu-burger ul .li-menu:hover {
+    transform: translateY(-12px);
+  }
+  
+  .header-2 .menu-burger ul .li-menu a {
+    text-decoration: none;
+    color: #b82330;
+  }
+  
+  .header-2 .menu-burger ul .li-menu .container-ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    display: none;
+  }
+  
+  .header-2 .menu-burger ul .li-menu:hover .container-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 25px 10px;
+    height: auto;
+    width: max-content;
+    text-align: baseline;
+  }
+  
+  .header-2 .menu-burger ul .li-menu .container-ul ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 5px;
+    width: max-content;
+    height: 100%;
+  }
+  
+  .header-2 .menu-burger ul .li-menu .container-ul ul li {
+    padding: 10px 0;
+    color: grey;
+    font-weight: lighter;
+    width: 100%;
+  }
+  .header-2 .menu-burger ul .li-menu .container-ul ul li h3 {
+    font-size: 16px;
+    color: #b82330;
+  }
+  
+  /* -------------- */
+  
+  .header-2 .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .header-2 .logo img {
+    padding-right: 20px;
+    width: 130px;
+    height: 70px;
+  }
+  .header-2 .nav-icone {
+  }
+  
+  .header-2 .nav-icone i {
+    padding: 0 10px;
+    font-size: 20px;
+    color: #b82330;
+  }
+  
+  .header-2 .menu .nav-icone select {
+    border: none;
+    color: #b82330;
+  }
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -125,3 +247,51 @@ button{
     right: 10px;
     top: -100px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    /* .header-2-------- */
+  
+    .header-2 .nav-icone i {
+      padding: 0 10px;
+      font-size: 16px;
+    }
+    /* sec3-------- */
+  }
+  
+  /* _________________________________ */
+  
+  @media screen and (max-width: 635px) {
+    /* header-2-------------------- */
+    .header-2 .menu-burger ul {
+      display: block;
+    }
+    .header-2 .menu-burger ul li {
+      padding: 0 10px;
+    }
+    .header-2 .nav-icone i {
+      display: none;
+      padding: 0 10px;
+      font-size: 20px;
+      color: #b82330;
+    }
+}
+@media screen and (max-width: 980px) {
+    /* header-2---------- */
+    .header-2 .logo img {
+      width: 120px;
+      height: 40px;
+    }
+  
+    .header-2 .menu-burger ul .li-menu:hover .container-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: white;
+      padding: 35px 10px;
+      height: auto;
+      text-align: center;
+      z-index: 1;
+    }
+}        
