@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 body {
   background-image: url(Oat_from_Quebec-web_1500x.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+=======
+ body {
+    background-image: url(Oat_from_Quebec-web_1500x.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+>>>>>>> 5245c41b35bf9c46d12113af9aad031d10c20d82
 
 /* ---------header---------- */
 .header-wrapper .header-1 {
